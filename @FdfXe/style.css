@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#head {
+    width: 100%;
+    background-color: aqua;
+}
+
+.twitter-timeline {
+    height: 600px;
+    overflow: scroll;
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+    width: calc(100%/5);
+    height: 50px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+/* タブ内テーブルスタイル */
+table, td, td{
+    border: 2px #808080 solid;
+}
+table {
+    width: 100%;
+}
+td {
+    width: calc(100%/4);
+    text-align: center;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#flr-one:checked ~ #flr-one_content,
+#flr-two:checked ~ #flr-two_content,
+#flr-three:checked ~ #flr-three_content,
+#flr-four:checked ~ #flr-four_content,
+#flr-five:checked ~ #flr-five_content,
+#flr-six:checked ~ #flr-six_content,
+#flr-seven:checked ~ #flr-seven_content,
+#flr-eight:checked ~ #flr-eight_content,
+#flr-nine:checked ~ #flr-nine_content,
+#flr-ten:checked ~ #flr-ten_content
+{
+    display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+    .tabs input:checked + .tab_item {
+    background-color: #5ab4bd;
+    color: #fff;
+}
