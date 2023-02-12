@@ -1,3 +1,4 @@
+document.querySelector(".tab_content").style.display = "block";
 document.getElementById("flr-one").addEventListener("click",()=>{
     let all_ele = document.querySelectorAll(".tab_content");
     all_ele.forEach((value,num)=>{ (num==0) ? all_ele[num].style.display = "block" : all_ele[num].style.display = "none"; })

@@ -64,10 +64,8 @@
     width: 100%;
     background-color: aqua;
 }
-
-.twitter-timeline {
-    height: 600px;
-    overflow: scroll;
+.twitter-follow-button {
+    vertical-align: middle;
 }
 
 /*タブ切り替え全体のスタイル*/
@@ -75,31 +73,18 @@
     margin-top: 50px;
     padding-bottom: 40px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     width: 100%;
     margin: 0 auto;
 }
 
-.tabs_container {
-    display: flex;
-    justify-content: center;
-}
-
 /*タブのスタイル*/
 .tab_item {
-    width: 10vw;
-    height: 10vw;
-    border-bottom: 3px solid #5ab4bd;
-    background-color: #d9d9d9;
-    line-height: 50px;
-    font-size: 16px;
-    color: #565656;
     display: flex;
     justify-content: center;
     align-items: center;
     float: left;
     margin: auto;
-    font-weight: bold;
     transition: all 0.2s ease;
 }
 .tab_item:hover {
@@ -114,9 +99,12 @@ input[name="tab_item"] {
 /*タブ切り替えの中身のスタイル*/
 .tab_content {
     display: none;
-    padding: 40px 40px 0;
+    padding: 10px 10px 0;
     clear: both;
     overflow: hidden;
+}
+.tab_content_description p {
+    text-align: center;
 }
 
 /* タブ内テーブルスタイル */
@@ -124,7 +112,9 @@ table, td, td{
     border: 2px #808080 solid;
 }
 table {
+    max-width: 830px;
     width: 100%;
+    margin: 0 auto;
     font-size: 1.1em;
 }
 td {
@@ -145,9 +135,25 @@ td {
     filter: brightness(160%) saturate(150%);
 }
 
-@media (max-width:390px) {
+/* スマホ用サイズ */
+@media (max-width:375px) {
     table {
         font-size: .66em;
+    }
+}
+@media (max-width:420px) {
+    table {
+        font-size: .88em;
+    }
+    .tab_item {
+        width: 20vw;   
+        height: 20vw;
+    }
+}
+@media (min-width:421px) and (max-width:649px) {
+    .tab_item {
+        width: 10vw;   
+        height: 10vw;
     }
 }
 @media (min-width:650px) {
@@ -155,5 +161,9 @@ td {
         width: 65px;
         height: 65px;
         margin: 0;
+    }
+    .tabs_container {
+        display: flex;
+        justify-content: center;
     }
 }
