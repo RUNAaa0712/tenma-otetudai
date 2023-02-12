@@ -1,0 +1,159 @@
+.charactor {
+    background-color: aqua;
+}
+.wakuwaku {
+    background-color: yellow;
+}
+.emblem {
+    background-color: violet;
+}
+.remarks {
+    background-color: floralwhite;
+}
+
+#flr-one_label {
+    background:
+        url(./img/1.jpg) no-repeat center/100%;
+}
+#flr-two_label {
+    background:
+        url(./img/2.jpg) no-repeat center/100%;
+}
+#flr-three_label {
+    background:
+        url(./img/3.jpg) no-repeat center/100%;
+}
+#flr-four_label {
+    background:
+        url(./img/4.jpg) no-repeat center/100%;
+}
+#flr-five_label {
+    background:
+        url(./img/5.jpg) no-repeat center/100%;
+}
+#flr-six_label {
+    background:
+        url(./img/6.jpg) no-repeat center/100%;
+}
+#flr-seven_label {
+    background:
+        url(./img/7.jpg) no-repeat center/100%;
+}
+#flr-eight_label {
+    background:
+        url(./img/8.jpg) no-repeat center/100%;
+}
+#flr-nine_label {
+    background:
+        url(./img/9.jpg) no-repeat center/100%;
+}
+#flr-ten_label {
+    background:
+        url(./img/10.jpg) no-repeat center/100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+#head {
+    width: 100%;
+    background-color: aqua;
+}
+
+.twitter-timeline {
+    height: 600px;
+    overflow: scroll;
+}
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabs_container {
+    display: flex;
+    justify-content: center;
+}
+
+/*タブのスタイル*/
+.tab_item {
+    width: 10vw;
+    height: 10vw;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    font-size: 16px;
+    color: #565656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: auto;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+}
+
+/* タブ内テーブルスタイル */
+table, td, td{
+    border: 2px #808080 solid;
+}
+table {
+    width: 100%;
+    font-size: 1.1em;
+}
+td {
+    width: calc(100%/4);
+    text-align: center;
+}
+
+#flr-one:checked ~ #flr-one_label,
+#flr-two:checked ~ #flr-two_label,
+#flr-three:checked ~ #flr-three_label,
+#flr-four:checked ~ #flr-four_label,
+#flr-five:checked ~ #flr-five_label,
+#flr-six:checked ~ #flr-six_label,
+#flr-seven:checked ~ #flr-seven_label,
+#flr-eight:checked ~ #flr-eight_label,
+#flr-nine:checked ~ #flr-nine_label,
+#flr-ten:checked ~ #flr-ten_label{
+    filter: brightness(160%) saturate(150%);
+}
+
+@media (max-width:390px) {
+    table {
+        font-size: .66em;
+    }
+}
+@media (min-width:650px) {
+    .tab_item {
+        width: 65px;
+        height: 65px;
+        margin: 0;
+    }
+}
