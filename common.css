@@ -135,6 +135,14 @@ td {
     filter: brightness(160%) saturate(150%);
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+footer > a {
+    margin: auto 0 0 0;
+}
+
 /* スマホ用サイズ */
 @media (max-width:375px) {
     table {
