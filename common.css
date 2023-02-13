@@ -115,23 +115,20 @@ table {
     max-width: 830px;
     width: 100%;
     margin: 0 auto;
-    font-size: 1.1em;
+    font-size: .7em;
 }
 td {
     width: calc(100%/4);
     text-align: center;
 }
+td p:nth-child(even) {
+    background-color: #ccc;
+}
+.comment *{
+    background-color: white !important;
+}
 
-#flr-one:checked ~ #flr-one_label,
-#flr-two:checked ~ #flr-two_label,
-#flr-three:checked ~ #flr-three_label,
-#flr-four:checked ~ #flr-four_label,
-#flr-five:checked ~ #flr-five_label,
-#flr-six:checked ~ #flr-six_label,
-#flr-seven:checked ~ #flr-seven_label,
-#flr-eight:checked ~ #flr-eight_label,
-#flr-nine:checked ~ #flr-nine_label,
-#flr-ten:checked ~ #flr-ten_label{
+#flr-one:checked ~ #flr-one_label, #flr-two:checked ~ #flr-two_label, #flr-three:checked ~ #flr-three_label, #flr-four:checked ~ #flr-four_label, #flr-five:checked ~ #flr-five_label, #flr-six:checked ~ #flr-six_label, #flr-seven:checked ~ #flr-seven_label, #flr-eight:checked ~ #flr-eight_label, #flr-nine:checked ~ #flr-nine_label, #flr-ten:checked ~ #flr-ten_label{
     filter: brightness(160%) saturate(150%);
 }
 
@@ -146,12 +143,12 @@ footer > a {
 /* スマホ用サイズ */
 @media (max-width:375px) {
     table {
-        font-size: .66em;
+        font-size: .3em;
     }
 }
 @media (max-width:420px) {
     table {
-        font-size: .88em;
+        font-size: .4em;
     }
     .tab_item {
         width: 20vw;   
