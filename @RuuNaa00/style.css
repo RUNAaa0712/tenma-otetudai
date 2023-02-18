@@ -1,0 +1,17 @@
+#flr-one:checked ~ #flr-one_label, #flr-two:checked ~ #flr-two_label, #flr-three:checked ~ #flr-three_label, #flr-four:checked ~ #flr-four_label, #flr-five:checked ~ #flr-five_label, #flr-six:checked ~ #flr-six_label, #flr-seven:checked ~ #flr-seven_label, #flr-eight:checked ~ #flr-eight_label, #flr-nine:checked ~ #flr-nine_label, #flr-ten:checked ~ #flr-ten_label{
+    filter: none;
+}
+#flr-one:hover ~ #flr-one_label::after, #flr-two:hover ~ #flr-two_label::after, #flr-three:hover ~ #flr-three_label::after, #flr-four:hover ~ #flr-four_label::after, #flr-five:hover ~ #flr-five_label::after, #flr-six:hover ~ #flr-six_label::after, #flr-seven:hover ~ #flr-seven_label::after, #flr-eight:hover ~ #flr-eight_label::after, #flr-nine:hover ~ #flr-nine_label::after, #flr-ten:hover ~ #flr-ten_label::after {
+    content: "";
+    border: solid yellow;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#flr-one:checked ~ #flr-one_label::after, #flr-two:checked ~ #flr-two_label::after, #flr-three:checked ~ #flr-three_label::after, #flr-four:checked ~ #flr-four_label::after, #flr-five:checked ~ #flr-five_label::after, #flr-six:checked ~ #flr-six_label::after, #flr-seven:checked ~ #flr-seven_label::after, #flr-eight:checked ~ #flr-eight_label::after, #flr-nine:checked ~ #flr-nine_label::after, #flr-ten:checked ~ #flr-ten_label::after {
+    content: "";
+    border: solid blue;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
