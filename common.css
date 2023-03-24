@@ -73,7 +73,6 @@
     margin-top: 50px;
     padding-bottom: 40px;
     background-color: #fff;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     width: 100%;
     margin: 0 auto;
 }
@@ -99,7 +98,6 @@ input[name="tab_item"] {
 /*タブ切り替えの中身のスタイル*/
 .tab_content {
     display: none;
-    padding: 10px 10px 0;
     clear: both;
     overflow: hidden;
 }
@@ -108,8 +106,8 @@ input[name="tab_item"] {
 }
 
 /* タブ内テーブルスタイル */
-table, td, td{
-    border: 2px #808080 solid;
+table, td{
+    border: 1.5px #101010 double;
 }
 table {
     max-width: 830px;
@@ -119,6 +117,7 @@ table {
 }
 td {
     width: calc(100%/4);
+    height: 50px;
     text-align: center;
 }
 td p:nth-child(even) {
